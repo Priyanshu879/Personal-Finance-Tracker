@@ -18,7 +18,7 @@ connectDB();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://personal-finance-tracker-frontend-rho.vercel.app"
+  "https://personal-finance-tracker-client-psi.vercel.app"
   // add more origins as needed
 ];
 
