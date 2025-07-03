@@ -1,4 +1,4 @@
-const host = "https://personal-finance-tracker-api.vercel.app/";
+const host = "https://personal-finance-tracker-api.vercel.app";
 // const host = "http://localhost:5000";
 const flaskHost = "http://localhost:8000";
 export const setAvatarAPI = `${host}/api/auth/setAvatar`;
