@@ -8,6 +8,7 @@ import morgan from "morgan";
 import transactionRoutes from "./Routers/Transactions.js";
 import userRoutes from "./Routers/userRouter.js";
 import path from "path";
+import ServerlessHttp from "serverless-http";
 
 dotenv.config({ path: "./config/config.env" });
 const app = express();
@@ -48,3 +49,6 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is listening on http://localhost:${port}`);
 });
+
+
+module.exports.handler = ServerlessHttp(app);
