@@ -7,8 +7,8 @@ import helmet from "helmet";
 import morgan from "morgan";
 import transactionRoutes from "./Routers/Transactions.js";
 import userRoutes from "./Routers/userRouter.js";
-import path from "path";
-import ServerlessHttp from "serverless-http";
+
+
 
 dotenv.config({ path: "./config/config.env" });
 const app = express();
@@ -51,4 +51,4 @@ app.listen(port, () => {
 });
 
 
-module.exports.handler = ServerlessHttp(app);
+
