@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon app.js",
-    "vercel-build": "npm run build",
-    "build": "react-scripts build"
+    "start": "node app.js"
+
+    
 
   },
   "keywords": [],
